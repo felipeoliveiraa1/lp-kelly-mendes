@@ -13,6 +13,7 @@ import {
 import { StickyCta } from "@/components/sticky-cta";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { DepoimentosCarousel } from "@/components/depoimentos-carousel";
+import { CHECKOUT_URL } from "@/constants";
 
 export default function Home() {
   return (
@@ -82,7 +83,9 @@ export default function Home() {
               <div className="pt-2 sm:pt-3 mb-8 sm:mb-10 lg:mb-12">
                 <a
                   className="group inline-flex items-center justify-center bg-gold-gradient hover:brightness-110 text-black font-bold py-3 sm:py-3.5 px-5 sm:px-7 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all transform hover:-translate-y-1 text-xs sm:text-base w-full sm:w-auto uppercase tracking-wider"
-                  href="#pricing"
+                  href={CHECKOUT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Sim! Eu Quero Ser Uma Brow Royale
                   <ArrowRight className="ml-2 size-4 sm:size-5 shrink-0 group-hover:translate-x-1 transition-transform" />
@@ -188,7 +191,9 @@ export default function Home() {
           <div className="mt-12 text-center">
             <a
               className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded shadow-lg transition-colors uppercase tracking-wider text-sm"
-              href="#pricing"
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Sim! Quero Ser Pioneira
               <ArrowUpRight className="ml-2 size-4 shrink-0" />
@@ -222,7 +227,9 @@ export default function Home() {
           <div className="mt-12">
             <a
               className="inline-flex items-center justify-center gap-2 bg-white text-black hover:bg-gray-200 font-bold py-3 px-10 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all transform hover:scale-105 uppercase tracking-wide text-sm"
-              href="#pricing"
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Quero Aplicar o Brow Royale Antes de Todo Mundo
               <ArrowRight className="size-4 shrink-0" />
@@ -327,13 +334,15 @@ export default function Home() {
                   O preço sobe para R$ 39,90 no próximo lote
                 </p>
               </div>
-              <button
-                type="button"
+              <a
+                href={CHECKOUT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-gold-gradient hover:brightness-110 text-black font-bold py-4 rounded-xl shadow-lg transition-all transform active:scale-95 uppercase tracking-wide text-sm flex items-center justify-center gap-2"
               >
                 Quero Me Inscrever Agora
                 <ArrowUpRight className="size-5 shrink-0" />
-              </button>
+              </a>
               <div className="mt-6 flex flex-wrap gap-3 justify-center">
                 <div className="flex items-center gap-2 text-xs text-gray-300 bg-white/5 px-4 py-2 rounded-lg">
                   <ShieldCheck className="size-4 shrink-0 text-primary" />
@@ -394,7 +403,9 @@ export default function Home() {
               <div className="mt-10">
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-black font-bold py-3 px-6 rounded-full shadow-lg transition-all transform hover:scale-105 uppercase tracking-wider text-sm"
-                  href="#pricing"
+                  href={CHECKOUT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Garantir minha vaga por R$ 19,90
                   <ArrowRight className="size-4 shrink-0" />
@@ -484,7 +495,9 @@ export default function Home() {
           <div className="mt-12 text-center">
             <a
               className="inline-flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-black hover:opacity-90 font-bold py-3 px-8 rounded shadow transition-all uppercase tracking-wider text-xs"
-              href="#pricing"
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Liberar Minha Vaga por R$ 19,90 Agora
               <ArrowUpRight className="ml-2 size-4 shrink-0" />

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { CHECKOUT_URL } from "@/constants";
 
 const HERO_SCROLL_THRESHOLD = 600;
 
@@ -37,7 +38,9 @@ export function StickyCta() {
         </div>
         <a
           className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:scale-105 text-center text-sm uppercase tracking-wide"
-          href="#pricing"
+          href={CHECKOUT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Quero Comprar Meu Ingresso
           <ArrowUpRight className="size-4 shrink-0" />

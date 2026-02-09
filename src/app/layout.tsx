@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import { MetaPixel } from "@/components/meta-pixel";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${inter.variable} bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary font-sans antialiased transition-colors duration-300`}
       >
+        <MetaPixel />
         {children}
       </body>
     </html>
