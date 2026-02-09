@@ -83,9 +83,7 @@ export default function Home() {
               <div className="pt-2 sm:pt-3 mb-8 sm:mb-10 lg:mb-12">
                 <a
                   className="group inline-flex items-center justify-center bg-gold-gradient hover:brightness-110 text-black font-bold py-3 sm:py-3.5 px-5 sm:px-7 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all transform hover:-translate-y-1 text-xs sm:text-base w-full sm:w-auto uppercase tracking-wider"
-                  href={CHECKOUT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#pricing"
                 >
                   Sim! Eu Quero Ser Uma Brow Royale
                   <ArrowRight className="ml-2 size-4 sm:size-5 shrink-0 group-hover:translate-x-1 transition-transform" />
@@ -191,9 +189,7 @@ export default function Home() {
           <div className="mt-12 text-center">
             <a
               className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded shadow-lg transition-colors uppercase tracking-wider text-sm"
-              href={CHECKOUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#pricing"
             >
               Sim! Quero Ser Pioneira
               <ArrowUpRight className="ml-2 size-4 shrink-0" />
@@ -227,9 +223,7 @@ export default function Home() {
           <div className="mt-12">
             <a
               className="inline-flex items-center justify-center gap-2 bg-white text-black hover:bg-gray-200 font-bold py-3 px-10 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all transform hover:scale-105 uppercase tracking-wide text-sm"
-              href={CHECKOUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#pricing"
             >
               Quero Aplicar o Brow Royale Antes de Todo Mundo
               <ArrowRight className="size-4 shrink-0" />
@@ -403,9 +397,7 @@ export default function Home() {
               <div className="mt-10">
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-black font-bold py-3 px-6 rounded-full shadow-lg transition-all transform hover:scale-105 uppercase tracking-wider text-sm"
-                  href={CHECKOUT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#pricing"
                 >
                   Garantir minha vaga por R$ 19,90
                   <ArrowRight className="size-4 shrink-0" />
@@ -495,9 +487,7 @@ export default function Home() {
           <div className="mt-12 text-center">
             <a
               className="inline-flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-black hover:opacity-90 font-bold py-3 px-8 rounded shadow transition-all uppercase tracking-wider text-xs"
-              href={CHECKOUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#pricing"
             >
               Liberar Minha Vaga por R$ 19,90 Agora
               <ArrowUpRight className="ml-2 size-4 shrink-0" />
