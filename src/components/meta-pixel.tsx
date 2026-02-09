@@ -26,7 +26,8 @@ export function MetaPixel() {
     if (typeof window === "undefined" || typeof document === "undefined") {
       return;
     }
-    if (window.fbq) {
+    const win = window as Window & { fbq?: () => void };
+    if (win.fbq) {
       return;
     }
     const script = document.createElement("script");
