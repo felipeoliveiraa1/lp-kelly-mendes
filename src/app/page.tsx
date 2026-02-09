@@ -355,17 +355,17 @@ export default function Home() {
       <section className="py-24 bg-surface-dark dark:bg-black relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 relative">
+            <div className="order-1 lg:order-1 relative">
               <div className="absolute inset-0 bg-primary/20 transform translate-x-4 translate-y-4 rounded-lg" />
               <Image
                 alt="Kelly Mendes - Especialista em sobrancelhas e brow lamination"
-                className="relative rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                className="relative rounded-lg shadow-2xl transition-all duration-700"
                 src="/bio.jpg"
                 width={600}
                 height={750}
               />
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-2 lg:order-2">
               <h2 className="font-display text-4xl sm:text-5xl text-white mb-8">
                 Quem é <span className="text-primary italic">Kelly Mendes</span>
               </h2>
