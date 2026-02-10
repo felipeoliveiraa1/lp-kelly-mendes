@@ -17,9 +17,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Brow Royale - Império da Estética",
+  title: "Brown Royale - Império da Estética",
   description:
-    "Descubra a técnica revolucionária Brow Royale que entrega sobrancelhas naturais e te permite faturar de R$3.000 a R$5.000 por mês.",
+    "Descubra a técnica revolucionária Brown Royale que entrega sobrancelhas naturais e te permite faturar de R$3.000 a R$5.000 por mês.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
