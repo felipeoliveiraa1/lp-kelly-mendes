@@ -79,12 +79,6 @@ export default function ObrigadoPage() {
             <Check className="size-5 shrink-0 mt-0.5 text-primary" />
             <span><span className="text-primary font-medium">Avisos e lembretes</span></span>
           </li>
-          <li className="flex items-start gap-3 text-white">
-            <Check className="size-5 shrink-0 mt-0.5 text-primary" />
-            <span>
-              <span className="text-gold-gradient font-medium">Bônus surpresa</span> para quem estiver ao vivo até o final
-            </span>
-          </li>
         </ul>
         <a
           href={WHATSAPP_GROUP_URL}
