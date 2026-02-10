@@ -171,7 +171,7 @@ export function LandingPageContent({
                     <strong className="text-gray-900 dark:text-white">
                       Valor por sessão:
                     </strong>{" "}
-                    Pelo menos R$300-R$400.
+                    Pelo menos R$ 150 a R$ 400.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -267,7 +267,7 @@ export function LandingPageContent({
                   <Check className="text-primary size-5 shrink-0 mt-0.5" />
                   <span>
                     Como cobrar pelo menos{" "}
-                    <span className="text-primary font-medium">R$300-R$400 por sessão</span>{" "}
+                    <span className="text-primary font-medium">R$ 150 a R$ 400 por sessão</span>{" "}
                     com o Brown Royale.
                   </span>
                 </li>
@@ -486,7 +486,7 @@ export function LandingPageContent({
                 </span>
               </summary>
               <div className="text-gray-600 dark:text-gray-400 p-6 pt-0 leading-relaxed border-t border-gray-100 dark:border-white/5 mt-4">
-                No mínimo R$300-R$400 por sessão. Mesmo quem está começando
+                No mínimo R$ 150 a R$ 400 por sessão. Mesmo quem está começando
                 consegue cobrar bem, porque o resultado é premium e muito valorizado
                 porque suas clientes não vão encontrar em outro lugar. E pode
                 chegar a R$500, R$600 ou até R$1.000 por sessão.
