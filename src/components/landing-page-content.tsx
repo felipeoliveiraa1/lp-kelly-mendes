@@ -14,7 +14,7 @@ import {
 import { StickyCta } from "@/components/sticky-cta";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { DepoimentosCarousel } from "@/components/depoimentos-carousel";
-import { CHECKOUT_URL } from "@/constants";
+import { CheckoutLink } from "@/components/checkout-link";
 
 export interface LandingPageContentProps {
   /** Título principal do hero (pode ser JSX com destaques). */
@@ -336,15 +336,12 @@ export function LandingPageContent({
                   O preço sobe para R$ 39,90 no próximo lote
                 </p>
               </div>
-              <a
-                href={CHECKOUT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <CheckoutLink
                 className="w-full bg-gold-gradient hover:brightness-110 text-black font-bold py-4 rounded-xl shadow-lg transition-all transform active:scale-95 uppercase tracking-wide text-sm flex items-center justify-center gap-2"
               >
                 Quero Me Inscrever Agora
                 <ArrowUpRight className="size-5 shrink-0" />
-              </a>
+              </CheckoutLink>
               <div className="mt-6 flex flex-wrap gap-3 justify-center">
                 <div className="flex items-center gap-2 text-xs text-gray-300 bg-white/5 px-4 py-2 rounded-lg">
                   <ShieldCheck className="size-4 shrink-0 text-primary" />
