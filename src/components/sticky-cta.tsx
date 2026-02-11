@@ -28,7 +28,7 @@ export function StickyCta() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-4 hidden sm:flex">
           <span className="text-white font-medium">
-            LOTE ZERO <span className="text-primary font-bold">LIBERADO</span>
+            LOTE 01 <span className="text-primary font-bold">LIBERADO</span>
           </span>
           <div className="w-32 h-2 bg-gray-700 rounded-full overflow-hidden">
             <div className="h-full bg-red-600 w-[85%] animate-pulse" />

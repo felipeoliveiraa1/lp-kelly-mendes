@@ -55,7 +55,7 @@ export function LandingPageContent({
               <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-primary/30 bg-black/40 backdrop-blur-sm">
                 <Calendar className="text-primary size-3 sm:size-4 shrink-0" />
                 <span className="text-gray-300 text-[10px] sm:text-xs tracking-wide uppercase">
-                  LOTE ZERO LIBERADO • 10/02 às 19h | Ao vivo no Zoom
+                  LOTE 01 LIBERADO • 23/02 às 19h | AO VIVO
                 </span>
               </div>
               <h1 className="font-display font-bold leading-tight text-white">
@@ -242,7 +242,6 @@ export function LandingPageContent({
       </section>
       <section
         className="relative py-24 bg-surface-dark overflow-hidden"
-        id="pricing"
       >
         <div
           className="absolute inset-0 opacity-5"
@@ -287,7 +286,7 @@ export function LandingPageContent({
                 </li>
               </ul>
             </div>
-            <div className="relative bg-black/60 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-2xl">
+            <div id="pricing" className="relative bg-black/60 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-2xl scroll-mt-24">
               <div className="flex justify-center md:hidden mb-4">
                 <span
                   className="inline-block bg-gold-gradient text-black text-xs font-bold py-2 px-5 rounded-full uppercase tracking-wider animate-blink"
