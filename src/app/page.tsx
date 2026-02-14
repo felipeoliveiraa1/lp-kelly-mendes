@@ -5,21 +5,14 @@ export default function Home() {
     <LandingPageContent
       heroHeadline={
         <>
-          A Chave para o Seu{" "}
-          <span className="text-gold-gradient">Império</span> na{" "}
-          <span className="text-gold-gradient">Estética de Sobrancelhas</span>
+          Fature de{" "}
+          <span className="text-gold-gradient font-semibold">R$ 150 a R$ 400</span>{" "}
+          por sessão com a{" "}
+          <span className="text-primary font-semibold">Técnica de Tintura</span>{" "}
+          que vira o jogo.
         </>
       }
-      heroSubheadline={
-        <>
-          Dê adeus à frustração de trabalhar muito e ganhar pouco: Descubra
-          o método Brown Royale que entrega{" "}
-          <span className="text-primary font-medium">renda previsível</span>, e te permite
-          cobrar pelo menos{" "}
-          <span className="text-primary font-medium">R$ 150 a R$ 400 por sessão</span>.
-        </>
-      }
-      heroSubtext="Uma aula exclusiva onde você vai descobrir como se tornar a embaixadora no Brasil desse método — antes que viralize."
+      heroSubheadline="Participe do Evento Exclusivo e aprenda ao vivo como dominar a naturalidade absoluta e sair da guerra de preços, mesmo que você esteja começando do zero."
     />
   );
 }

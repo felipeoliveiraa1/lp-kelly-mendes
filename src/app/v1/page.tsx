@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { LandingPageContent } from "@/components/landing-page-content";
 
 export const metadata: Metadata = {
-  title: "Saia dos R$ 50 e fature R$ 150 a R$ 400 por sessão | Brown Royale",
+  title: "Fature de R$ 150 a R$ 400 por sessão | Brown Royale",
   description:
-    "Descubra o evento exclusivo onde vou revelar a técnica de tintura que gera renda previsível e transforma sobrancelhas comuns em resultados de luxo.",
+    "Participe do Evento Exclusivo e aprenda ao vivo como dominar a naturalidade absoluta e sair da guerra de preços, mesmo começando do zero.",
 };
 
 export default function V1Page() {
@@ -12,19 +12,14 @@ export default function V1Page() {
     <LandingPageContent
       heroHeadline={
         <>
-          Saia dos <span className="text-primary font-semibold">R$ 50</span> e fature de{" "}
-          <span className="text-gold-gradient font-semibold">R$ 150 a R$ 400</span> por sessão com o{" "}
-          <span className="text-primary font-semibold">Método Brown Royale</span>.
+          Fature de{" "}
+          <span className="text-gold-gradient font-semibold">R$ 150 a R$ 400</span>{" "}
+          por sessão com a{" "}
+          <span className="text-primary font-semibold">Técnica de Tintura</span>{" "}
+          que vira o jogo.
         </>
       }
-      heroSubheadline={
-        <>
-          Descubra o <span className="text-primary font-medium">evento exclusivo</span> onde vou revelar a{" "}
-          <span className="text-primary font-medium">técnica de tintura</span> que gera{" "}
-          <span className="text-gold-gradient font-medium">renda previsível</span> e transforma sobrancelhas comuns em{" "}
-          <span className="text-primary font-medium">resultados de luxo</span>.
-        </>
-      }
+      heroSubheadline="Participe do Evento Exclusivo e aprenda ao vivo como dominar a naturalidade absoluta e sair da guerra de preços, mesmo que você esteja começando do zero."
     />
   );
 }

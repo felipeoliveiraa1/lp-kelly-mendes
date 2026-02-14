@@ -15,6 +15,7 @@ import { StickyCta } from "@/components/sticky-cta";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { DepoimentosCarousel } from "@/components/depoimentos-carousel";
 import { CheckoutLink } from "@/components/checkout-link";
+import { ScarcityBar } from "@/components/scarcity-bar";
 import { CHECKOUT_URL } from "@/constants";
 
 export interface LandingPageContentProps {
@@ -33,8 +34,9 @@ export function LandingPageContent({
 }: LandingPageContentProps) {
   return (
     <>
+      <ScarcityBar />
       <StickyCta />
-      <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background-dark">
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background-dark pt-14">
         <div
           className="absolute inset-0 bg-cover bg-no-repeat md:hidden"
           style={{
@@ -92,10 +94,10 @@ export function LandingPageContent({
               </div>
               <div className="pt-2 sm:pt-3 mb-8 sm:mb-10 lg:mb-12">
                 <a
-                  className="group inline-flex items-center justify-center bg-gold-gradient hover:brightness-110 text-black font-bold py-3 sm:py-3.5 px-5 sm:px-7 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all transform hover:-translate-y-1 text-xs sm:text-base w-full sm:w-auto uppercase tracking-wider"
+                  className="group inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 sm:py-4 px-5 sm:px-7 rounded-full shadow-lg transition-all transform hover:-translate-y-1 text-xs sm:text-base w-full sm:w-auto uppercase tracking-wider animate-cta-pulse border-2 border-emerald-400"
                   href="#pricing"
                 >
-                  Sim! Eu Quero Ser Uma Brown Royale
+                  GARANTIR MINHA VAGA NO LOTE 1 - R$ 19,90
                   <ArrowRight className="ml-2 size-4 sm:size-5 shrink-0 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
@@ -115,26 +117,28 @@ export function LandingPageContent({
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-300">
-                    Profissionais da estética que buscam previsibilidade
-                    financeira.
+                    Você se vê como <span className="text-primary font-semibold">&quot;designer barata&quot;</span> e
+                    cansa de cobrar pouco pelo seu trabalho.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-300">
-                    Iniciantes que querem se posicionar como referência.
+                    Não tem <span className="text-primary font-semibold">previsibilidade financeira</span>:
+                    um mês enche, outro mês vazio.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-300">
-                    Quem está cansada de brigar por preço e copiar Instagram.
+                    Quer parar de depender de promoção e cliente que só busca o menor preço.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-300">
-                    Quem quer cobrar mais com um método que funciona.
+                    Está pronta para <span className="text-primary font-semibold">cobrar o que vale</span> e
+                    ter agenda cheia com quem valoriza.
                   </span>
                 </li>
               </ul>
@@ -142,28 +146,28 @@ export function LandingPageContent({
             <div className="bg-white dark:bg-surface-dark p-10 rounded-2xl shadow-xl border border-gray-100 dark:border-white/5 relative overflow-hidden group">
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-gray-50 dark:bg-white/5 rounded-tr-full transition-transform group-hover:scale-110" />
               <h3 className="font-display text-3xl text-gray-900 dark:text-white mb-2">
-                POR QUE SUAS CLIENTES
+                O QUE VOCÊ VAI
               </h3>
               <h4 className="font-display text-3xl text-primary mb-8 italic">
-                VÃO AMAR & PAGAR MAIS
+                APRENDER
               </h4>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <BadgeCheck className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-600 dark:text-gray-300">
-                    <strong className="text-gray-900 dark:text-white">
-                      Método sem trauma:
+                    <strong className="text-primary">
+                      Técnica de Tintura Revelada:
                     </strong>{" "}
-                    Para a sua carreira e para o seu bolso.
+                    naturalidade absoluta que suas clientes vão amar.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <BadgeCheck className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-600 dark:text-gray-300">
-                    <strong className="text-gray-900 dark:text-white">
-                      Aplicação simples e rápida:
+                    <strong className="text-primary">
+                      Método de Posicionamento Premium:
                     </strong>{" "}
-                    Do método no seu negócio.
+                    saia da guerra de preços e atraia quem paga mais.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -172,25 +176,16 @@ export function LandingPageContent({
                     <strong className="text-gray-900 dark:text-white">
                       Valor por sessão:
                     </strong>{" "}
-                    Pelo menos R$ 150 a R$ 400.
+                    R$ 150 a R$ 400 com técnica e posicionamento certos.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <BadgeCheck className="text-primary size-5 mt-1 shrink-0" />
                   <span className="text-gray-600 dark:text-gray-300">
                     <strong className="text-gray-900 dark:text-white">
-                      Resultados imediatos:
+                      Aplicação ao vivo:
                     </strong>{" "}
-                    Com menos retoques na sua estratégia.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <BadgeCheck className="text-primary size-5 mt-1 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-300">
-                    <strong className="text-gray-900 dark:text-white">
-                      Não precisa ser famosa:
-                    </strong>{" "}
-                    Nem ter mil clientes.
+                    aprenda na prática, mesmo começando do zero.
                   </span>
                 </li>
               </ul>
@@ -198,10 +193,10 @@ export function LandingPageContent({
           </div>
           <div className="mt-12 text-center">
             <a
-              className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded shadow-lg transition-colors uppercase tracking-wider text-sm"
+              className="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded shadow-lg transition-all uppercase tracking-wider text-sm animate-cta-pulse border-2 border-emerald-400"
               href="#pricing"
             >
-              Sim! Quero Ser Pioneira
+              GARANTIR MINHA VAGA NO LOTE 1 - R$ 19,90
               <ArrowUpRight className="ml-2 size-4 shrink-0" />
             </a>
           </div>
@@ -232,10 +227,10 @@ export function LandingPageContent({
           </div>
           <div className="mt-12">
             <a
-              className="inline-flex items-center justify-center gap-2 bg-white text-black hover:bg-gray-200 font-bold py-3 px-10 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all transform hover:scale-105 uppercase tracking-wide text-sm"
+              className="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all transform hover:scale-105 uppercase tracking-wide text-sm animate-cta-pulse border-2 border-emerald-400"
               href="#pricing"
             >
-              Quero Aplicar o Brown Royale Antes de Todo Mundo
+              GARANTIR MINHA VAGA NO LOTE 1 - R$ 19,90
               <ArrowRight className="size-4 shrink-0" />
             </a>
           </div>
@@ -343,17 +338,17 @@ export function LandingPageContent({
                     href={CHECKOUT_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-gold-gradient hover:brightness-110 text-black font-bold py-4 rounded-xl shadow-lg transition-all transform active:scale-95 uppercase tracking-wide text-sm flex items-center justify-center gap-2"
+                    className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all transform active:scale-95 uppercase tracking-wide text-sm flex items-center justify-center gap-2 animate-cta-pulse border-2 border-emerald-400"
                   >
-                    Quero Me Inscrever Agora
+                    GARANTIR MINHA VAGA NO LOTE 1 - R$ 19,90
                     <ArrowUpRight className="size-5 shrink-0" />
                   </a>
                 }
               >
                 <CheckoutLink
-                  className="w-full bg-gold-gradient hover:brightness-110 text-black font-bold py-4 rounded-xl shadow-lg transition-all transform active:scale-95 uppercase tracking-wide text-sm flex items-center justify-center gap-2"
+                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all transform active:scale-95 uppercase tracking-wide text-sm flex items-center justify-center gap-2 animate-cta-pulse border-2 border-emerald-400"
                 >
-                  Quero Me Inscrever Agora
+                  GARANTIR MINHA VAGA NO LOTE 1 - R$ 19,90
                   <ArrowUpRight className="size-5 shrink-0" />
                 </CheckoutLink>
               </Suspense>

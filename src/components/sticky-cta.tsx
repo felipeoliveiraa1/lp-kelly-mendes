@@ -36,10 +36,10 @@ export function StickyCta() {
           <span className="text-xs text-gray-400">85% Vendido</span>
         </div>
         <a
-          className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:scale-105 text-center text-sm uppercase tracking-wide"
+          className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:scale-105 text-center text-sm uppercase tracking-wide animate-cta-pulse border-2 border-emerald-400"
           href="#pricing"
         >
-          Quero Comprar Meu Ingresso
+          GARANTIR MINHA VAGA NO LOTE 1 - R$ 19,90
           <ArrowUpRight className="size-4 shrink-0" />
         </a>
       </div>
